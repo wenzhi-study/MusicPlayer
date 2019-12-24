@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.HelloActivity">
+    <!--CustomVideoView 自定义视频类的位置-->
+    <com.example.musicplayer.view.CustomVideoView
+        android:id="@+id/vdoVi_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:background="@color/colorTransparent"
+            >
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="40dp"
+                android:background="@color/colorTransparent"
+                android:text="3"
+                />
+            <Button
+                android:id="@+id/btn_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="跳过→"
+                android:textSize="40dp"
+                android:background="@color/colorTransparent"
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

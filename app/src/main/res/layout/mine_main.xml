@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的"
+            android:textSize="27dp"
+            android:gravity="bottom"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            />
+        <SearchView
+            android:layout_width="240dp"
+            android:layout_height="match_parent"
+            >
+        </SearchView>
+        <ImageView
+            android:id="@+id/iv_mine_more"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/mine_more"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/iv_head"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/h1"
+            android:layout_marginLeft="20dp"
+            />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="admin"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/iv_msg"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/mail"
+            android:layout_marginLeft="190dp"
+            android:layout_gravity="right"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:id="@+id/ll_like"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/like" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我喜欢" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_fecent"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/recent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最近" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_down"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/down"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_buy"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="40dp"
+                android:src="@drawable/buy"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已购"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

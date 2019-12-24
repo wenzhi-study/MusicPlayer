@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_logo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+
+        android:layout_weight="1"
+        android:backgroundTint="@color/colorWhite"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/edtTxt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/id_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请输入账号"
+            android:inputType="number"
+            android:selectAllOnFocus="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_pswd"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edtTxt_pswd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/pswd_bg"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="请输入密码"
+            android:inputType="textPassword"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:layout_weight="2"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nul"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="忘记密码"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/tv_regiestr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="注册新用户"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <CheckBox
+            android:id="@+id/chk_agreement"
+            android:layout_width="40dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:text="已阅读并同意" />
+
+        <TextView
+            android:id="@+id/tv_agreement"
+            android:layout_width="73dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:text="服务协议" />
+    </LinearLayout>
+</LinearLayout>

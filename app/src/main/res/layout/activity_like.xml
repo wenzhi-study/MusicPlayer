@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LikeActivity">
+    <ListView
+        android:id="@+id/lv_music"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingBottom="70dp"
+        >
+
+    </ListView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_play_tab"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white"
+        >
+        <SeekBar
+            android:id="@+id/skb_music"
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+        <TextView
+            android:id="@+id/tv_play_method"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="顺序"
+            android:textSize="20sp"
+            android:background="@android:color/white"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            />
+        <ImageView
+            android:id="@+id/iv_disc"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/cp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentBottom="true"
+            />
+        <TextView
+            android:id="@+id/tv_song_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌名"
+            android:layout_toRightOf="@id/iv_disc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignTop="@id/iv_disc"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+
+            />
+        <TextView
+            android:id="@+id/tv_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="歌手"
+            android:layout_below="@id/tv_song_name"
+            android:layout_toRightOf="@id/iv_disc"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@android:color/black"
+
+            />
+        <ImageView
+            android:id="@+id/iv_stop"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@id/iv_fastBackward"
+            android:src="@drawable/stop"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/iv_fastBackward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/iv_playOrPause"
+            android:src="@drawable/backward"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/iv_playOrPause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@id/iv_speed"
+            android:src="@drawable/play3"
+            android:fitsSystemWindows="true"
+            android:layout_marginLeft="10dp"
+            />
+        <ImageView
+            android:id="@+id/iv_speed"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/speed"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>
